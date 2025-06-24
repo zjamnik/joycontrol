@@ -264,6 +264,15 @@ def _register_commands_with_controller_state(controller_state, cli):
 
     cli.add_command(nfc.__name__, nfc)
 
+    #sleep
+    async def sleep(*args):
+        """
+        sleep - waits specified amount of seconds
+        """
+        await asyncio.sleep(args[0])
+    
+    cli.add_command(sleep.__name__, sleep)
+
 
 async def _main(args):
     # parse the spi flash
