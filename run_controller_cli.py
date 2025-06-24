@@ -269,7 +269,7 @@ def _register_commands_with_controller_state(controller_state, cli):
         """
         sleep - waits specified amount of seconds
         """
-        await asyncio.sleep(args[0])
+        await asyncio.sleep(float(args[0]))
     
     cli.add_command(sleep.__name__, sleep)
 
