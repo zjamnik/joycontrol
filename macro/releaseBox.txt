@@ -1,11 +1,11 @@
 loop 2
     loop 6
         #release mon
-        a
-        b
         sleep 0.2
         right
     loopend
     right
     down
 loopend
+down
+down
