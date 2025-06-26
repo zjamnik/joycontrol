@@ -9,29 +9,15 @@ left
 a
 sleep 1.2
 #go to controller settings
-down
-down
-down
-down
-down
-down
-down
-down
+loop 8
+    down
+loopend
 a
 sleep 1.2
 # go to test inputs
-down
-down
-down
-down
-down
-down
-down
-down
-down
-down
-down
-down
+loop 12jc res
+    down
+loopend
 a
 sleep 1.2
 a
