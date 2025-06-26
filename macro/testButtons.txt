@@ -1,0 +1,55 @@
+# go to settings
+hold down
+sleep 1
+release down
+hold right
+sleep 1.5
+release right
+left
+a
+sleep 1.2
+#go to controller settings
+down
+down
+down
+down
+down
+down
+down
+down
+a
+sleep 1.2
+# go to test inputs
+down
+down
+down
+down
+down
+down
+down
+down
+down
+down
+down
+down
+a
+sleep 1.2
+a
+sleep 1
+# test buttons
+up
+right
+down
+left
+a
+b
+x
+y
+plus
+minus
+l
+r
+zl
+zr
+l_stick
+r_stick

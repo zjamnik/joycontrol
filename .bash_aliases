@@ -21,9 +21,15 @@ jcrestart() {
 }
 
 jcmacro() {
+	buttonDelay='0.01'
+	if [[ ! -z $2 ]]; then
+		buttonDelay=$2
+	fi
+
 	while read -r line; do
 		if [[ ${line:0:1} != "#" ]]; then
 			jc "$line"
+			jc "sleep $buttonDelay"
 		fi
 	done < "$1"
 }
