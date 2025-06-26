@@ -7,6 +7,7 @@ jcupdate() {
 	git pull --ff-only
 	cd
 	cp -f ~/joycontrol/.jc_aliases ~
+	cp -f ~/joycontrol/macro/* ~
 }
 
 jcstart() {
@@ -29,7 +30,7 @@ jcmacro() {
 		buttonDelay=$2
 	fi
 
-	macro=$(~/joycontrol/expand_nested_loops.sh "~/joycontrol/macro/$1")
+	macro=$(~/joycontrol/expand_nested_loops.sh "$1")
 	echo "$macro"
 
 	while read -r line; do
