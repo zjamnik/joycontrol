@@ -25,7 +25,7 @@ jcrestart() {
 }
 
 jcmacro() {
-	buttonDelay='0.01'
+	buttonDelay='0.02'
 	if [[ ! -z $2 ]]; then
 		buttonDelay=$2
 	fi
