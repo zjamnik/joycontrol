@@ -15,7 +15,7 @@ loopend
 a
 sleep 1.2
 # go to test inputs
-loop 12jc res
+loop 12
     down
 loopend
 a
